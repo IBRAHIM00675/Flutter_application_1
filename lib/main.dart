@@ -1,6 +1,6 @@
 // this is the main entry point of the Flutter application
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_1/gradient_container.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
@@ -8,25 +8,14 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.black,
-        body: Center(
-          child: Container(
-            color: Colors.lightBlueAccent,
-            child: Text(
-              'Hello, World!',
-              style: TextStyle(
-                fontSize: 34.8,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 15, 28, 16),
-              ),
-            ),
-          ),
-        ),
+      home:Scaffold(
+        body: GradientContainer()
       ),
     ),
   );
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
