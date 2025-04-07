@@ -9,6 +9,7 @@ class GradientContainer extends StatelessWidget {
 
  const GradientContainer({super.key});
 
+
     @override
   Widget build( context) {
   
@@ -23,7 +24,7 @@ class GradientContainer extends StatelessWidget {
                )
                ),
           child: const Center(
-              child: StyledText(),
+              child: StyledText('Hello World!'),
             ),
         );
   }
